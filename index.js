@@ -10,7 +10,6 @@ class EmailMessageDataController extends MessageDataController {
 		this.recipient = model.recipient;
 		this.about = model.about;
 		this.text = model.text;
-		this.description = model.description;
 		this.dateSent = model.dateSent;
 	}
 
@@ -25,9 +24,6 @@ class EmailMessageDataController extends MessageDataController {
 
 	get text(){ return this.model.text }
 	set text(value){ this.model.text = value }
-
-	get description(){ return this.model.description }
-	set description(value){ this.model.description = value }
 
 	get dateSent(){ return this.model.dateSent }
 	set dateSent(value){ this.model.dateSent = value }
